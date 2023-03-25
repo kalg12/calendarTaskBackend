@@ -1,4 +1,5 @@
 const { Schema, model } = require("mongoose");
+const moment = require("moment-timezone");
 
 const TaskSchema = new Schema({
   title: {
@@ -16,7 +17,11 @@ const TaskSchema = new Schema({
   },
   createdAt: {
     type: Date,
-    default: Date.now,
+    default: moment.tz("America/Mexico_City").toDate(),
+  },
+  eventDay: {
+    type: Date,
+    required: [true, "Añadir la fecha del evento es obligatorio"],
   },
 });
 

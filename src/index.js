@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 });
 
 /* Importing the routes. */
-app.use("api/task", require("./routes/task.routes"));
+app.use("/api/task", require("./routes/task.routes"));
 
 /* Listening to the port that is defined in the .env file. */
 app.listen(process.env.PORT, () => {
