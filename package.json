@@ -8,7 +8,7 @@
     "dev": "nodemon ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Kevin Luciano <78965771+kalg12@users.noreply.github.com>",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.22"
@@ -18,6 +18,8 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "moment-timezone": "^0.5.42",
-    "mongoose": "^7.0.3"
-  }
+    "mongoose": "^7.0.3",
+    "yarn": "^1.22.19"
+  },
+  "repository": "https://github.com/kalg12/calendarTaskBackend.git"
 }
