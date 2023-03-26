@@ -3,6 +3,7 @@ const app = express();
 require("dotenv").config();
 const cors = require("cors");
 const { dbConnection } = require("./database/config");
+const port = process.env.PORT || 4000;
 
 /* Allowing the server to receive and send data in JSON format. */
 app.use(cors());
@@ -23,5 +24,5 @@ app.use("/api/task", require("./routes/task.routes"));
 
 /* Listening to the port that is defined in the .env file. */
 app.listen(process.env.PORT, () => {
-  console.log(`Server running on port ${process.env.PORT}`);
+  console.log(`Server running on port ${port}`);
 });
