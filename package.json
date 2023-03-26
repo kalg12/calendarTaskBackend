@@ -4,8 +4,8 @@
   "description": "",
   "main": "/src/index.js",
   "scripts": {
-    "start": "node ./source/index.js",
-    "dev": "nodemon ./source/index.js",
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kevin Luciano <78965771+kalg12@users.noreply.github.com>",
